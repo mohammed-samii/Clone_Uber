@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'Uber-Move Bold';
+    src: url(assets/font/UberMoveBold.otf);
+}
+@font-face {
+    font-family: 'Uber-Move Medium';
+    src: url(assets/font/UberMoveMedium.otf);
+}
+@font-face {
+    font-family: 'Uber-Move Regular';
+    src: url(assets/font/UberMoveTextRegular.otf);
+}
+@font-face {
+    font-family: 'Uber-Move Light' ;
+    src: url(assets/font/UberMoveTextLight.otf);
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    font-family: 'Uber-Move Medium';
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.left{
+    margin-left: 70px;
+}
+.left a{
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+.right{
+    margin-right: 70px;
+}
+.right a{
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+.left a:hover{
+    background-color: rgba(82, 80, 80, 0.714);
+}
+.right a:hover{
+    background-color: rgba(82, 80, 80, 0.714);
+}
+.sign-up{
+    width: 55px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+}
+.sign-up:hover {
+    background-color: rgb(216, 216, 216) !important;
+    color: rgb(0, 0, 0);
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.left1{
+    margin-top: -30px;
+}
+.left1 h2{
+    font-size: 3.5rem;
+    width: 80%;
+    font-family: 'Uber-Move Bold';
+}
+.left1 p{
+    font-family: 'Uber-Move Regular';
+}
+.input{
+    position: relative;
+    display: inline-block;
+}
+.input img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+.input img.start {
+    left: 5px; 
+  }
+
+.input img.end {
+    right: 10px; 
+  }
+.input input{
+    padding-left: 30px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px 10px;
+    font-family: 'Uber-Move Light';
+}
+.input2{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+.input2 img{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+}
+.input2 input{
+    padding-left: 30px; 
+    width: 350px;
+    height: 40px; 
+    border-radius: 10px 10px;
+    font-family: 'Uber-Move Light';
+}
+.hero-button{
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    border: none;
+    font-family: 'Uber-Move Regular';
+    font-weight: 600;
+}
+.second2{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Uber-Move Regular';
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.right2{
+    margin-left: -50px;
+    width: 28.5%;
+}
+.right2 h2{
+    font-family: 'Uber-Move Bold';
+    font-size: 3.2rem;
+}
+.right2 p{
+    font-size: 1.03rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+.right2 button{
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Uber-Move Regular';
+}
+.cta{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -15px;
+}
+.transition{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+.transition::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.transition::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.4px;
+    width: 100%;
+    background-color: black; 
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+}
+.transition:hover::after{
+    transform: scaleX(1);
+}
+.third3{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Uber-Move Regular';
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+}
+.right3{
+    margin-left: -50px;
+    width: 28.5%;
+}
+.right3 h2{
+    font-family: 'Uber-Move Bold';
+    font-size: 3.2rem;
+}
+.right3 p{
+    font-size: 1.03rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+.right3 button{
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Uber-Move Regular';
+}
+.cta2{
+    display: flex;
+}
+.cta2 p{
+    margin-left: 20px;
+}
+.left3{
+    display: flex;
+    margin-right: -16rem;
+}
+.fourth4{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Uber-Move Regular';
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.right4{
+    width: 34%;
+}
+.right4 h2{
+    font-family: 'Uber-Move Bold';
+    font-size: 2.2rem;
+}
+.right4 p{
+    font-size: 1.03rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+.right4 button{
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Uber-Move Regular';
+}
+.left4{
+    display: flex;
+    margin-right: -16rem;
+}
+.fifth {
+    background-color: rgba(205, 205, 205, 0.304);
+    font-family: 'Uber-Move Bold';
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.heading {
+    margin-left: 10rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.qrcode {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    flex-wrap: wrap;
+}
+
+.app-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 30px;
+    margin: 2rem;
+}
+
+.app-box img.qr-img {
+    width: 180px;
+    margin-right: 1rem;
+    margin-left: -1rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.text p {
+    font-family: 'Uber-Move Regular';
+    margin-top: -10px;
+}
+
+.text h3 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.app-box i {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: 'Uber-Move Medium';
+    display: flex;
+    flex-direction: column;
+    padding-left: 12rem;
+    padding-top: 8rem;
+}
+.logo{
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+.Help{
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    display: inline-block;
+    font-family: 'Uber-Move Regular';
+}
+.Help:hover{
+
+    border-bottom: solid 1px white;
+}
+.quick-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 40rem;
+    font-size: 1.2rem;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    gap: 22px;
+}
+.list a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Uber-Move Regular';
+    font-size: 0.9rem;
+}
+.list a:hover{
+    color: gray;
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 20px;
+
+}
+.social-media img{
+    filter: invert(1);
+    margin-right: 90px;
+}
+.more img{
+    filter: invert(1);
+}
+.more{
+    margin-right: -10rem;
+}
+.more a{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+.footer3{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40rem;
+    gap: 20px;
+    color: gray;
+    font-size: 0.9rem;
+    margin-top: 5rem;
+    margin-bottom: -2rem;
+}
+.terms{
+    cursor: pointer;
+    display: flex;
+}
+.terms p{
+    color: gray;
+    margin-left: 20px;
+}
+.terms_a:hover{
+    color: rgb(92, 92, 92);
+}
+.install{
+    margin-left: -15px;
+}
+.install img{
+    margin-left: 10px;
+}
+.up i{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 100%;
+    background-color: white;
+    font-size: 1.7rem;
+    color: black;
+}
