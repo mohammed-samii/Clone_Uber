@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Uber-Move Bold';
-    src: url(assets/font/UberMoveBold.otf);
+    src: url(assets/fonts/UberMoveBold.otf);
 }
 @font-face {
     font-family: 'Uber-Move Medium';
-    src: url(assets/font/UberMoveMedium.otf);
+    src: url(assets/fonts/UberMoveMedium.otf);
 }
 @font-face {
     font-family: 'Uber-Move Regular';
-    src: url(assets/font/UberMoveTextRegular.otf);
+    src: url(assets/fonts/UberMoveTextRegular.otf);
 }
 @font-face {
     font-family: 'Uber-Move Light' ;
-    src: url(assets/font/UberMoveTextLight.otf);
+    src: url(assets/fonts/UberMoveTextLight.otf);
 }
 html{
     scroll-behavior: smooth;
